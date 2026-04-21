@@ -21,7 +21,12 @@
     "paths": {
       "@/*": ["./src/*"],
       "@payload-config": ["./src/payload.config.ts"],
-      "@components/*": ["./src/app/(frontend)/components/*"]
+      // NOTE: The following paths are for the frontend app, which is a separate Next.js app within the monorepo. Adjust the paths as needed based on your project structure.
+      "@frontend/*": ["./src/app/(frontend)/*"],
+
+      "@components/*": ["./src/app/(frontend)/components/*"],
+      "@icons/*": ["./src/app/(frontend)/icons/*"],
+      "@data/*": ["./src/app/(frontend)/data/*"]
     },
     "target": "ES2022"
   },
