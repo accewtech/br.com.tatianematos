@@ -24,6 +24,7 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
+  cors: process.env.CORS_ORIGIN ? [process.env.CORS_ORIGIN] : undefined,
   db: mongooseAdapter({
     url: process.env.DATABASE_URL || '',
   }),
