@@ -2,8 +2,8 @@ import React from 'react'
 import './styles.css'
 
 export const metadata = {
-  description: 'A blank template using Payload in a Next.js app.',
-  title: 'Payload Blank Template',
+  description: 'RehabHub: gestão inteligente para clínicas de reabilitação. Mais tempo para cuidar, mais clareza para crescer.',
+  title: 'RehabHub | Gestão que transforma cuidado',
 }
 
 export default async function RootLayout(props: { children: React.ReactNode }) {
